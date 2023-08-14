@@ -18,7 +18,7 @@ contract DeployPortal is Script {
         orchestrators[0] = orchestrator;
 
         vm.startBroadcast(deployerKey);
-        (bool sent, bytes memory data) = portalDeployerAddress.call{value: 0.02 ether}("");
+        (bool sent, ) = portalDeployerAddress.call{value: 0.02 ether}("");
         require(sent, "Failed to send Ether to portal deployer");
 
         ProxyAdmin proxyAdmin = new ProxyAdmin();

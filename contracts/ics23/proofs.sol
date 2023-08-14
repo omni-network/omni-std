@@ -2531,7 +2531,7 @@ library Ics23InnerSpec {
   function _estimate(
     Data memory r
   ) internal pure returns (uint) {
-    uint256 e;uint256 i;
+    uint256 e;// uint256 i;
     e += 1 + ProtoBufRuntime._sz_lendelim(ProtoBufRuntime._estimate_packed_repeated_int32(r.child_order));
     e += 1 + ProtoBufRuntime._sz_int32(r.child_size);
     e += 1 + ProtoBufRuntime._sz_int32(r.min_prefix_length);
@@ -4239,7 +4239,7 @@ library Ics23CompressedExistenceProof {
   function _estimate(
     Data memory r
   ) internal pure returns (uint) {
-    uint256 e;uint256 i;
+    uint256 e;// uint256 i;
     e += 1 + ProtoBufRuntime._sz_lendelim(r.key.length);
     e += 1 + ProtoBufRuntime._sz_lendelim(r.value.length);
     e += 1 + ProtoBufRuntime._sz_lendelim(Ics23LeafOp._estimate(r.leaf));

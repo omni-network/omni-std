@@ -220,9 +220,9 @@ library Proof{
             }
         }
         if (Ics23CompressedBatchProof._empty(proof.compressed) == false) {
-            (Ics23CommitmentProof.Data memory proof, Compress.DecompressEntryError erCode) = Compress.decompress(proof);
+            (Ics23CommitmentProof.Data memory proof_, Compress.DecompressEntryError erCode) = Compress.decompress(proof);
             if (erCode != Compress.DecompressEntryError.None) return (empty, CalculateRootError.Decompress);
-            return calculateRoot(proof);
+            return calculateRoot(proof_);
         }
         //revert(); // dev: calculateRoot(CommitmentProof) empty proof
         return (empty, CalculateRootError.EmptyProof);
