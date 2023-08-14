@@ -1302,16 +1302,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@omni/contracts@file:../../../contracts::locator=%40omni%2Fdemo-counter-ui%40workspace%3A.":
+"@omni/contracts@file:../../../::locator=%40omni%2Fdemo-counter-ui%40workspace%3A.":
   version: 0.0.1
-  resolution: "@omni/contracts@file:../../../contracts#../../../contracts::hash=6dd40f&locator=%40omni%2Fdemo-counter-ui%40workspace%3A."
+  resolution: "@omni/contracts@file:../../../#../../../::hash=cac213&locator=%40omni%2Fdemo-counter-ui%40workspace%3A."
   dependencies:
     "@openzeppelin/contracts": ^4.9.2
     "@openzeppelin/contracts-upgradeable": ^4.9.3
     ds-test: "https://github.com/dapphub/ds-test"
     forge-std: "https://github.com/foundry-rs/forge-std"
     solidity-bytes-utils: 0.8.0
-  checksum: 62b12985d999f1de3b25eb24e95a9c18acb7f2a29079da33fc0abc8d34c86bac84a3ab18f0df209b5f39dc13dd9c3c456974650d87e2a8d42c0a62affaa32f99
+  checksum: 3f63f5a8986340e9ebbb7a3b43101e3d3b1e7d11aa81287c976320b3210189d2a351d1cf8732e14d9eecefa076576e1180576b8e184d85250031887314a2bf58
   languageName: node
   linkType: hard
 
@@ -1319,7 +1319,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@omni/demo-counter-ui@workspace:."
   dependencies:
-    "@omni/contracts": ../../../contracts
+    "@omni/contracts": ../../../
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11
     "@typescript-eslint/eslint-plugin": ^5.57.1

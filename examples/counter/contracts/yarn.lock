@@ -434,14 +434,14 @@ __metadata:
 
 "@omni/contracts@file:../../../::locator=root-workspace-0b6124%40workspace%3A.":
   version: 0.0.1
-  resolution: "@omni/contracts@file:../../../#../../../::hash=27cb01&locator=root-workspace-0b6124%40workspace%3A."
+  resolution: "@omni/contracts@file:../../../#../../../::hash=a9292b&locator=root-workspace-0b6124%40workspace%3A."
   dependencies:
     "@openzeppelin/contracts": ^4.9.2
     "@openzeppelin/contracts-upgradeable": ^4.9.3
     ds-test: "https://github.com/dapphub/ds-test"
     forge-std: "https://github.com/foundry-rs/forge-std"
     solidity-bytes-utils: 0.8.0
-  checksum: bc0608f36aab3b017003b228916271a8095f606780f9dbaec9fa10b33ec2a88c33d1d36fa94ffd13e5fe412e9253cfe79822646d1918000a3c9ec1ceda5fee4c
+  checksum: 890da18d5216ee54d535aa3a06142c599e8e3c5cbb505263ab703512e5d9385a5665067a85285ec13af9786489d8c29202b1681d116bf6391d50df1bce0e7d08
   languageName: node
   linkType: hard
 
