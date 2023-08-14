@@ -4,6 +4,13 @@ Solidity contracts for building cross-rollup smart contract systems. Read more a
 
 A simple example of a smart contract system built with this library is shown under the `examples/counter` directory.
 
+## Directory Overview
+
+- `contracts/`: Omni solidity library implementation
+- `examples/`: example smart contract systems that utilize the Omni library
+    - `counter`: a "counter" example for tracking a global count across rollups
+- `src/`: typescript utilities for interacting with Omni contracts
+
 ## Instructions
 
 1. Set required env variables from the `.env.example` in your own `.env`. You'll also need to set Vite specific RPC URLs from `examples/counter/ui/.env.example` under `examples/counter/ui/.env`
