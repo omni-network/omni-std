@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: MIT
-// added by us
 pragma solidity ^0.8.10;
 
 import "./proofs.sol";
