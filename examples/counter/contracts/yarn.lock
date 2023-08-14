@@ -432,16 +432,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@omni/contracts@file:../../../contracts::locator=root-workspace-0b6124%40workspace%3A.":
+"@omni/contracts@file:../../../::locator=root-workspace-0b6124%40workspace%3A.":
   version: 0.0.1
-  resolution: "@omni/contracts@file:../../../contracts#../../../contracts::hash=02cf78&locator=root-workspace-0b6124%40workspace%3A."
+  resolution: "@omni/contracts@file:../../../#../../../::hash=27cb01&locator=root-workspace-0b6124%40workspace%3A."
   dependencies:
     "@openzeppelin/contracts": ^4.9.2
     "@openzeppelin/contracts-upgradeable": ^4.9.3
     ds-test: "https://github.com/dapphub/ds-test"
     forge-std: "https://github.com/foundry-rs/forge-std"
     solidity-bytes-utils: 0.8.0
-  checksum: 19bb96657cc972b2608a1c4c01c172b1d191f59538bac6aca4e2fed251f279a5b48b9cf07f3a02a3054bcc4dff78f1e968a616b9886a33f6d51fbe1a0a6de6b6
+  checksum: bc0608f36aab3b017003b228916271a8095f606780f9dbaec9fa10b33ec2a88c33d1d36fa94ffd13e5fe412e9253cfe79822646d1918000a3c9ec1ceda5fee4c
   languageName: node
   linkType: hard
 
@@ -4288,7 +4288,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@omni/contracts": ../../../contracts
+    "@omni/contracts": ../../../
     ds-test: "https://github.com/dapphub/ds-test"
     forge-std: "https://github.com/foundry-rs/forge-std"
   languageName: unknown
