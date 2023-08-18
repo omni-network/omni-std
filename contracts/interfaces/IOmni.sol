@@ -11,6 +11,7 @@ interface IOmni {
     function isOmniTx() external view returns (bool);
     function isExternalTx() external view returns (bool);
 
+    function txSourceChain() external returns (string memory);
     function isTxFrom(string memory) external view returns (bool);
     function isTxFromOneOf(string memory, string memory) external view returns (bool);
     function isTxFromOneOf(string memory, string memory, string memory) external view returns (bool);
