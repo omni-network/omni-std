@@ -11,6 +11,17 @@ A simple example of a smart contract system built with this library is shown und
     - `counter`: a "counter" example for tracking a global count across rollups
 - `src/`: typescript utilities for interacting with Omni contracts
 
+## How to Use for your own contracts
+
+You'll need to import these contracts to your own repo to use them. You can use any of the following methods:
+- With a yarn repo (as in the example):
+  - `yarn add https://github.com/omni-network/omni-std`
+  - Import with `@omni/contracts/{...}`
+- With forge:
+    - `forge install github.com/omni-network/omni-std`
+    - Import with `lib/omni-std/{...}`, or use remappings
+- Clone this repo and replace the Example with your own code
+
 ## Instructions
 
 1. Set required env variables from the `.env.example` in your own `.env`. You'll also need to set Vite specific RPC URLs from `examples/counter/ui/.env.example` under `examples/counter/ui/.env`
