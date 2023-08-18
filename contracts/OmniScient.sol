@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.21;
+pragma solidity ^0.8;
 
 import {OmniCodec} from "./OmniCodec.sol";
 import {IOmni} from "./interfaces/IOmni.sol";
