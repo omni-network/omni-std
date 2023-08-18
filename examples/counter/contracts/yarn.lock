@@ -432,14 +432,14 @@ __metadata:
 
 "@omni/contracts@https://github.com/omni-network/omni-std":
   version: 0.0.1
-  resolution: "@omni/contracts@https://github.com/omni-network/omni-std.git#commit=5e3c3db7c5b58490ef8ab993efbbc87ee33209f0"
+  resolution: "@omni/contracts@https://github.com/omni-network/omni-std.git#commit=c03bc9e488e8fb1990d693a36cacb0c00e2cfa9c"
   dependencies:
     "@openzeppelin/contracts": ^4.9.2
     "@openzeppelin/contracts-upgradeable": ^4.9.3
     ds-test: "https://github.com/dapphub/ds-test"
     forge-std: "https://github.com/foundry-rs/forge-std"
     solidity-bytes-utils: 0.8.0
-  checksum: 7e7a0e42cbd91a88b7735d6e09050b10d2b79765c4f9e723936ffe3599c79897202ca47e574280ecb359f2642a7b7947b79fa59f87d1370f7fdf31cb85399477
+  checksum: 3b826b08c44878eef4dd53ff48dba7ad49f17ad429ebd331aeda368c958ce3f50a83fafce041cbad65f732e67ffc9061a386a352ad483cf66d311263b09ad918
   languageName: node
   linkType: hard
 

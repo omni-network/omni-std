@@ -11,11 +11,11 @@ contract LocalCounter {
 
     mapping(string => uint256) public countByChain;
 
-    OmniPortal public omni;
+    IOmniPortal public omni;
 
     event Increment(uint256 count);
 
-    constructor(OmniPortal _portal, address _global) {
+    constructor(IOmniPortal _portal, address _global) {
         count = 0;
         globalCount = 0;
         omni = _portal;
