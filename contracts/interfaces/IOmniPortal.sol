@@ -5,8 +5,9 @@ import {OmniCodec} from "../OmniCodec.sol";
 
 interface IOmniPortal {
     // txn metadata
-    function txSender() external view returns (address);
-    function txSourceChain() external view returns (string memory);
+    function isOmniTx() external view returns (bool); // true if tx is from omni
+    function txSender() external view returns (address); // tx.from if tx is from omni
+    function txSourceChain() external view returns (string memory); // tx.sourceChain if tx is from omni
     function chain() external view returns (string memory);
     function supportedChains(string memory) external view returns (bool);
     function getLatestOmniBlock() external view returns (OmniCodec.Block memory);

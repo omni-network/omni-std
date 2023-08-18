@@ -432,7 +432,7 @@ __metadata:
 
 "@omni/contracts@https://github.com/omni-network/omni-std":
   version: 0.0.1
-  resolution: "@omni/contracts@https://github.com/omni-network/omni-std.git#commit=1527f29ae179091d86fbd8e5c7d91ccdbfe6a27b"
+  resolution: "@omni/contracts@https://github.com/omni-network/omni-std.git#commit=6c16aad7c1384208ced4a00c6c70f5f49ecc5be2"
   dependencies:
     "@openzeppelin/contracts": ^4.9.2
     "@openzeppelin/contracts-upgradeable": ^4.9.3
