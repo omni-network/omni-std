@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.21;
+pragma solidity ^0.8;
 
 interface IOmni {
     event TransactionSent(string indexed destChain, uint64 indexed nonce, bytes tx);
