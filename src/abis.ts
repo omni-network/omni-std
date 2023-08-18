@@ -1,5 +1,5 @@
-import Omni from '../artifacts/Omni.sol/Omni.json'
-import OmniPortal from '../artifacts/OmniPortal.sol/OmniPortal.json'
-import OmniScient from '../artifacts/OmniScient.sol/OmniScient.json'
+import IOmni from '../artifacts/IOmni.sol/IOmni.json'
+import IOmniPortal from '../artifacts/IOmniPortal.sol/IOmniPortal.json'
+import IOmniScient from '../artifacts/OmniScient.sol/OmniScient.json'
 
-export { Omni, OmniPortal, OmniScient }
+export { IOmni, IOmniPortal, IOmniScient }
