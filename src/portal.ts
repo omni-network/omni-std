@@ -1,13 +1,13 @@
 import { ethers } from 'ethers'
 import { getStorageProof, StorageProof } from './merkle'
-import { OmniPortal } from './abis'
+import { IOmniPortal } from './abis'
 
 export async function getStateRoot(
   provider: ethers.providers.JsonRpcProvider,
   portalAddress: string,
   blockNumber: number,
 ): Promise<string> {
-  const portal = new ethers.Contract(portalAddress, OmniPortal.abi, provider)
+  const portal = new ethers.Contract(portalAddress, IOmniPortal.abi, provider)
   return portal.stateRoots(blockNumber)
 }
 
@@ -16,7 +16,7 @@ export async function getOmniHead(
   portalAddress: string,
   blockNumber: number,
 ): Promise<{ blockNumber: ethers.BigNumber; stateRoot: string }> {
-  const portal = new ethers.Contract(portalAddress, OmniPortal.abi, provider)
+  const portal = new ethers.Contract(portalAddress, IOmniPortal.abi, provider)
   return portal.getOmniHead(blockNumber)
 }
 

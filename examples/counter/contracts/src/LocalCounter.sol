@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8;
+pragma solidity ^0.8.21;
 
-import {OmniPortal} from "@omni/contracts/contracts/OmniPortal.sol";
+import {IOmniPortal} from "@omni/contracts/contracts/interfaces/IOmniPortal.sol";
 
 contract LocalCounter {
     uint256 public count;
