@@ -432,14 +432,14 @@ __metadata:
 
 "@omni/contracts@https://github.com/omni-network/omni-std":
   version: 0.0.1
-  resolution: "@omni/contracts@https://github.com/omni-network/omni-std.git#commit=6c16aad7c1384208ced4a00c6c70f5f49ecc5be2"
+  resolution: "@omni/contracts@https://github.com/omni-network/omni-std.git#commit=41bed6de886e03c5f5d2d99d3ec78a7a77385554"
   dependencies:
     "@openzeppelin/contracts": ^4.9.2
     "@openzeppelin/contracts-upgradeable": ^4.9.3
     ds-test: "https://github.com/dapphub/ds-test"
     forge-std: "https://github.com/foundry-rs/forge-std"
     solidity-bytes-utils: 0.8.0
-  checksum: 145ef95812c10ee97946f500a9969afefd0515f5668cb2943338941d6cbddbb62d5ee0d88efd6a607636b2d2e96dabbc34da009be9f1dc336ea6f0f2d6ab0a69
+  checksum: c066381208658a6225ce0e76715ee949d7ed558b6fde353c2089ecbcfd458764d1b870b83e43280608dade95cb38dcde634afc2aa58dcfc35a87e38bcf66ff1a
   languageName: node
   linkType: hard
 
@@ -611,9 +611,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 20.5.0
-  resolution: "@types/node@npm:20.5.0"
-  checksum: 659bc5fc93b5c02bd88ca4bfae4f6b9dc307d45884d1dd9d69df85819a9943cdc00cd3c87eec3048866df6a67f52297f74d170e47a44f61edb3e8f770d94e85e
+  version: 20.5.1
+  resolution: "@types/node@npm:20.5.1"
+  checksum: 3dbe611cd67afa987102c8558ee70f848949c5dcfee5f60abc073e55c0d7b048e391bf06bb1e0dc052cb7210ca97136ac496cbaf6e89123c989de6bd125fde82
   languageName: node
   linkType: hard
 
@@ -1104,7 +1104,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.21.9":
+"browserslist@npm:^4.21.10, browserslist@npm:^4.21.9":
   version: 4.21.10
   resolution: "browserslist@npm:4.21.10"
   dependencies:
@@ -1427,11 +1427,11 @@ __metadata:
   linkType: hard
 
 "core-js-compat@npm:^3.31.0":
-  version: 3.32.0
-  resolution: "core-js-compat@npm:3.32.0"
+  version: 3.32.1
+  resolution: "core-js-compat@npm:3.32.1"
   dependencies:
-    browserslist: ^4.21.9
-  checksum: e740b348dfd8dc25ac851ab625a1d5a63c012252bdd6d8ae92d1b2ebf46e6cf57ca6cbec4494cbacdd90d3f8ed822480c8a7106c990dbe9055ebdf5b79fbb92e
+    browserslist: ^4.21.10
+  checksum: 2ce0002d6d2acabfc6f4c1ea32915683406a10051a186db354b761303cb6f5728f83887d070fb8d0072b5601bb16cb0d24555ee72bfa6df244f7b3ef74d61f76
   languageName: node
   linkType: hard
 
@@ -1673,9 +1673,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.477":
-  version: 1.4.495
-  resolution: "electron-to-chromium@npm:1.4.495"
-  checksum: b076b1f5ef61f45ca03f4dce47ec280c705405b0cfd3741cc791ef0172a73122846bdf4bddddc4120dece693166e17fe0d6efc847664ecc5852fbec4df9c3153
+  version: 1.4.496
+  resolution: "electron-to-chromium@npm:1.4.496"
+  checksum: b90cc4cc71691a9506bcce3b8b184d22794c58b4a2af5e95f7bc305b254e8c5af06b51e26f866d018aaf70b80e0fb498e3a196c5841765bcf05bac9f0f924624
   languageName: node
   linkType: hard
 
@@ -4776,9 +4776,9 @@ __metadata:
   linkType: hard
 
 "tslib@npm:^2.0.0":
-  version: 2.6.1
-  resolution: "tslib@npm:2.6.1"
-  checksum: b0d176d176487905b66ae4d5856647df50e37beea7571c53b8d10ba9222c074b81f1410fb91da13debaf2cbc970663609068bdebafa844ea9d69b146527c38fe
+  version: 2.6.2
+  resolution: "tslib@npm:2.6.2"
+  checksum: 329ea56123005922f39642318e3d1f0f8265d1e7fcb92c633e0809521da75eeaca28d2cf96d7248229deb40e5c19adf408259f4b9640afd20d13aecc1430f3ad
   languageName: node
   linkType: hard
 
