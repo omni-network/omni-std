@@ -25,7 +25,7 @@ contract LocalCounter {
     function increment() public {
         count += 1;
 
-        if (omni.isOmniTx()) {
+        if (omni.isXChainTx()) {
             countByChain[omni.txSourceChain()] += 1;
         }
 
