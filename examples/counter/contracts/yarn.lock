@@ -432,14 +432,14 @@ __metadata:
 
 "@omni/contracts@https://github.com/omni-network/omni-std":
   version: 0.0.1
-  resolution: "@omni/contracts@https://github.com/omni-network/omni-std.git#commit=41bed6de886e03c5f5d2d99d3ec78a7a77385554"
+  resolution: "@omni/contracts@https://github.com/omni-network/omni-std.git#commit=ffa43c7dbf9528404cb023df7b438837e4167961"
   dependencies:
     "@openzeppelin/contracts": ^4.9.2
     "@openzeppelin/contracts-upgradeable": ^4.9.3
     ds-test: "https://github.com/dapphub/ds-test"
     forge-std: "https://github.com/foundry-rs/forge-std"
     solidity-bytes-utils: 0.8.0
-  checksum: c066381208658a6225ce0e76715ee949d7ed558b6fde353c2089ecbcfd458764d1b870b83e43280608dade95cb38dcde634afc2aa58dcfc35a87e38bcf66ff1a
+  checksum: 5f6107fbd60c9e20713cef32249e7bbc3ba28f38ad2b3d3582ed46d660c868e2beab7027a08b71563cea73d5ff01f3d7f2d040f042ca37daaea21e42abd6f42f
   languageName: node
   linkType: hard
 
@@ -611,9 +611,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 20.5.1
-  resolution: "@types/node@npm:20.5.1"
-  checksum: 3dbe611cd67afa987102c8558ee70f848949c5dcfee5f60abc073e55c0d7b048e391bf06bb1e0dc052cb7210ca97136ac496cbaf6e89123c989de6bd125fde82
+  version: 20.5.3
+  resolution: "@types/node@npm:20.5.3"
+  checksum: fe67a0fd7402218bdf91523a2b1c2e41d619f7294b1a471e0a778b8bc7bb3fcf291aed12041bcbe9622d50a3d1295a9adea0e7e19bb9386a246bf66071404721
   languageName: node
   linkType: hard
 
@@ -652,9 +652,9 @@ __metadata:
   linkType: hard
 
 "@types/underscore@npm:*":
-  version: 1.11.6
-  resolution: "@types/underscore@npm:1.11.6"
-  checksum: 89b92c35d1b464c9fcddc2683ea41ad1aaa0b298e7243e5ae808ea3dfd545062ca83b0d63515f89578f84cb479de877dbb61f1bb2fcc2a7e5755812f42b09b8b
+  version: 1.11.7
+  resolution: "@types/underscore@npm:1.11.7"
+  checksum: 6e60e22e509687a9b15668c08db9fd27fe61e26564f0c74466d80a8501bcbdca80247f722a4aadc503f62cfdc9a8dfa5f7a0f30f3e61946c88e8088eef5b61f5
   languageName: node
   linkType: hard
 
@@ -1248,9 +1248,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001517":
-  version: 1.0.30001521
-  resolution: "caniuse-lite@npm:1.0.30001521"
-  checksum: be2a2b2cd3be03401887aaa31b89f3e7c6230289e6ef704e224268389cc136480fca502ac9e5001a65ff1e50459d3d95f8c4b2d39f878ab9843af3d6f372c8bb
+  version: 1.0.30001522
+  resolution: "caniuse-lite@npm:1.0.30001522"
+  checksum: 56e3551c02ae595085114073cf242f7d9d54d32255c80893ca9098a44f44fc6eef353936f234f31c7f4cb894dd2b6c9c4626e30649ee29e04d70aa127eeefeb0
   languageName: node
   linkType: hard
 
@@ -1673,9 +1673,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.477":
-  version: 1.4.496
-  resolution: "electron-to-chromium@npm:1.4.496"
-  checksum: b90cc4cc71691a9506bcce3b8b184d22794c58b4a2af5e95f7bc305b254e8c5af06b51e26f866d018aaf70b80e0fb498e3a196c5841765bcf05bac9f0f924624
+  version: 1.4.499
+  resolution: "electron-to-chromium@npm:1.4.499"
+  checksum: 9002f3bcd9018f38b3496c2ced5393c6144d3a09bc5e1ea9866541045f6364841a6d11afe8c5977838835bc70f50f8caee63ba928a910e68ac1eed45afd18120
   languageName: node
   linkType: hard
 
@@ -2355,7 +2355,7 @@ __metadata:
 
 "forge-std@https://github.com/foundry-rs/forge-std":
   version: 1.6.0
-  resolution: "forge-std@https://github.com/foundry-rs/forge-std.git#commit=7b4876e8de2a232a54159035f173e35421000c19"
+  resolution: "forge-std@https://github.com/foundry-rs/forge-std.git#commit=4b8d29e8402a95b469525b87dab9c76abb2b72f0"
   checksum: 1a8913b219f828fbd12bf20955b731d77c05a88aa4f1d369217a15d02551d0789712bd37dc1999a2384f0ffd3370e7c57cb96f37d9d2305f1d9ca5d206c10269
   languageName: node
   linkType: hard
@@ -3688,8 +3688,8 @@ __metadata:
   linkType: hard
 
 "node-fetch@npm:^2.6.0, node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.12, node-fetch@npm:^2.6.7":
-  version: 2.6.12
-  resolution: "node-fetch@npm:2.6.12"
+  version: 2.6.13
+  resolution: "node-fetch@npm:2.6.13"
   dependencies:
     whatwg-url: ^5.0.0
   peerDependencies:
@@ -3697,7 +3697,7 @@ __metadata:
   peerDependenciesMeta:
     encoding:
       optional: true
-  checksum: 3bc1655203d47ee8e313c0d96664b9673a3d4dd8002740318e9d27d14ef306693a4b2ef8d6525775056fd912a19e23f3ac0d7111ad8925877b7567b29a625592
+  checksum: 055845ae5b4796c78c7053564745345025cf959563b3568b43c385f67d311779e6b00e5fef6ed1b79f86ba4048e4b4b722e1aa948305521b9353eb7e788912c9
   languageName: node
   linkType: hard
 
