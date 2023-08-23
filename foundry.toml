@@ -9,7 +9,3 @@ remappings = [
 ]
 
 libs = ["node_modules"]
-
-[rpc_endpoints]
-optimism-goerli = "${OPTIMISM_GOERLI_RPC_URL}"
-arbitrum-goerli = "${ARBITRUM_GOERLI_RPC_URL}"
