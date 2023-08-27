@@ -6,7 +6,7 @@ interface IOmni {
     event TransactionMarkSuccess(bytes32 sourceTxHash);
     event TransactionMarkReverted(bytes32 sourceTxHash);
 
-    function sendTx(string memory, address, uint256, uint64, bytes memory) external payable returns (uint256);
+    function sendTx(string memory, address, bytes memory) external returns (uint256);
 
     function isOmniTx() external view returns (bool);
     function isExternalTx() external view returns (bool);

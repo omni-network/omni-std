@@ -13,10 +13,8 @@ interface IOmniPortal {
     function getLatestOmniBlock() external view returns (OmniCodec.Block memory);
 
     // messages
-    function sendOmniTx(address _to, uint256 _value, uint64 _gasLimit, bytes memory _data) external payable;
-    function sendXChainTx(string memory _chain, address _to, uint256 _value, uint64 _gasLimit, bytes memory _data)
-        external
-        payable;
+    function sendOmniTx(address _to, bytes memory _data) external payable;
+    function sendXChainTx(string memory _chain, address _to, bytes memory _data) external;
 
     // state verification
     function verifyOmniState(
