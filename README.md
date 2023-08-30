@@ -14,6 +14,7 @@ Simple examples of smart contract systems built with this library can be found a
 You'll need to import these contracts to your own repo to use them. You can use any of the following methods:
 - With yarn:
   - `yarn add https://github.com/omni-network/omni-std`
+  - or, for later versions of yarn, `yarn add @omni/contracts@https://github.com/omni-network/omni-std`
   - Import with `@omni/contracts/{...}`
 - With forge:
     - `forge install github.com/omni-network/omni-std`
