@@ -1,0 +1,13 @@
+{
+    "name": "@omni/contracts",
+    "version": "0.0.1",
+    "packageManager": "yarn@3.5.0",
+    "files": [
+      "**/*.sol",
+      "**/*.json"
+    ],
+    "scripts": {
+        "prepare": "bash ../scripts/prepare-contracts-package.sh"
+    }
+}
+  
