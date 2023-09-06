@@ -3,8 +3,9 @@ pragma solidity ^0.8;
 
 import {OmniCodec} from "./OmniCodec.sol";
 import {IOmni} from "./interfaces/IOmni.sol";
+import {IOmniScient} from "./interfaces/IOmniScient.sol";
 
-contract OmniScient {
+contract OmniScient is IOmniScient {
     address internal constant OMNI_PREDEPLOY_ADDRESS = 0x1212400000000000000000000000000000000001;
     IOmni constant omni = IOmni(OMNI_PREDEPLOY_ADDRESS);
 
