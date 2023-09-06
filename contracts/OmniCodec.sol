@@ -15,12 +15,26 @@ library OmniCodec {
         bytes data;
     }
 
-    struct Block {
-        string sourceChain;
+    struct BlockChunk {
+        string destChain;
         bytes32 parentHash;
         bytes32 hash;
         uint64 number;
         Tx[] txs;
+        uint64 totalChunks;
+        uint64 chunkIndex;
+    }
+
+    // Many rollups follow ethereum post EIP-1559 block gas limit of
+    // 30,000,000. Average calldata byte costs 15.95 gas (4 gas if the byte
+    // is zero, 16 otherwise). The theoretical maximum size is about 1.8 MB for
+    // a single tx, that takes up an entire block. Omni xchain txs are batch,
+    // and submitted together in a single tx. So we set a conservative limit of
+    // for a single omni xchain tx of < 1% 1.8MB.
+    uint64 public constant MAX_XCHAIN_CALLDATA_BYTES = 10_000; // 10kb
+
+    function isBelowXChainCalldataLimit(bytes memory _data) internal pure returns (bool) {
+        return _data.length <= MAX_XCHAIN_CALLDATA_BYTES;
     }
 
     function packChain(string memory _chain) internal pure returns (bytes32) {
@@ -31,12 +45,12 @@ library OmniCodec {
         return packChain(_chain1) == packChain(_chain2);
     }
 
-    function encodeBlock(Block memory _block) internal pure returns (bytes memory) {
+    function encodeBlockChunk(BlockChunk memory _block) internal pure returns (bytes memory) {
         return abi.encode(_block);
     }
 
-    function decodeBlock(bytes memory _block) internal pure returns (Block memory) {
-        return abi.decode(_block, (Block));
+    function decodeBlockChunk(bytes memory _block) internal pure returns (BlockChunk memory) {
+        return abi.decode(_block, (BlockChunk));
     }
 
     function encodeTx(Tx memory _tx) internal pure returns (bytes memory) {
@@ -47,3 +61,4 @@ library OmniCodec {
         return abi.decode(_tx, (Tx));
     }
 }
+
