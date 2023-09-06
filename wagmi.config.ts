@@ -23,7 +23,7 @@ export default defineConfig([
       {
         abi: OmniPortal.abi as Abi,
         name: 'OmniPortal',
-        // we ready, we should realease with portal addresses by chain
+        // when stable, we should realease with portal addresses by chain
         // address: {
         //  [chainId]: address
         // }
