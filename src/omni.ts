@@ -61,6 +61,13 @@ export const omniABI = [
     name: 'TransactionSent',
   },
   {
+    stateMutability: 'nonpayable',
+    type: 'function',
+    inputs: [{ name: '_chain', internalType: 'string', type: 'string' }],
+    name: 'addSupportedChain',
+    outputs: [],
+  },
+  {
     stateMutability: 'view',
     type: 'function',
     inputs: [],
@@ -128,6 +135,20 @@ export const omniABI = [
     outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
   },
   {
+    stateMutability: 'view',
+    type: 'function',
+    inputs: [],
+    name: 'nonce',
+    outputs: [{ name: '', internalType: 'uint64', type: 'uint64' }],
+  },
+  {
+    stateMutability: 'nonpayable',
+    type: 'function',
+    inputs: [{ name: '_chain', internalType: 'string', type: 'string' }],
+    name: 'removeSupportedChain',
+    outputs: [],
+  },
+  {
     stateMutability: 'nonpayable',
     type: 'function',
     inputs: [
@@ -137,6 +158,13 @@ export const omniABI = [
     ],
     name: 'sendTx',
     outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
+  },
+  {
+    stateMutability: 'nonpayable',
+    type: 'function',
+    inputs: [{ name: '_chain', internalType: 'string', type: 'string' }],
+    name: 'setTxSourceChain',
+    outputs: [],
   },
   {
     stateMutability: 'nonpayable',
@@ -255,6 +283,26 @@ export function useOmniIsTxFromOneOf<
 }
 
 /**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link omniABI}__ and `functionName` set to `"nonce"`.
+ */
+export function useOmniNonce<
+  TFunctionName extends 'nonce',
+  TSelectData = ReadContractResult<typeof omniABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<typeof omniABI, TFunctionName, TSelectData>,
+    'abi' | 'address' | 'functionName'
+  > = {} as any,
+) {
+  return useContractRead({
+    abi: omniABI,
+    address: omniAddress,
+    functionName: 'nonce',
+    ...config,
+  } as UseContractReadConfig<typeof omniABI, TFunctionName, TSelectData>)
+}
+
+/**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link omniABI}__.
  */
 export function useOmniWrite<
@@ -279,6 +327,62 @@ export function useOmniWrite<
 }
 
 /**
+ * Wraps __{@link useContractWrite}__ with `abi` set to __{@link omniABI}__ and `functionName` set to `"addSupportedChain"`.
+ */
+export function useOmniAddSupportedChain<
+  TMode extends WriteContractMode = undefined,
+>(
+  config: TMode extends 'prepared'
+    ? UseContractWriteConfig<
+        PrepareWriteContractResult<
+          typeof omniABI,
+          'addSupportedChain'
+        >['request']['abi'],
+        'addSupportedChain',
+        TMode
+      > & { functionName?: 'addSupportedChain' }
+    : UseContractWriteConfig<typeof omniABI, 'addSupportedChain', TMode> & {
+        abi?: never
+        functionName?: 'addSupportedChain'
+      } = {} as any,
+) {
+  return useContractWrite<typeof omniABI, 'addSupportedChain', TMode>({
+    abi: omniABI,
+    address: omniAddress,
+    functionName: 'addSupportedChain',
+    ...config,
+  } as any)
+}
+
+/**
+ * Wraps __{@link useContractWrite}__ with `abi` set to __{@link omniABI}__ and `functionName` set to `"removeSupportedChain"`.
+ */
+export function useOmniRemoveSupportedChain<
+  TMode extends WriteContractMode = undefined,
+>(
+  config: TMode extends 'prepared'
+    ? UseContractWriteConfig<
+        PrepareWriteContractResult<
+          typeof omniABI,
+          'removeSupportedChain'
+        >['request']['abi'],
+        'removeSupportedChain',
+        TMode
+      > & { functionName?: 'removeSupportedChain' }
+    : UseContractWriteConfig<typeof omniABI, 'removeSupportedChain', TMode> & {
+        abi?: never
+        functionName?: 'removeSupportedChain'
+      } = {} as any,
+) {
+  return useContractWrite<typeof omniABI, 'removeSupportedChain', TMode>({
+    abi: omniABI,
+    address: omniAddress,
+    functionName: 'removeSupportedChain',
+    ...config,
+  } as any)
+}
+
+/**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link omniABI}__ and `functionName` set to `"sendTx"`.
  */
 export function useOmniSendTx<TMode extends WriteContractMode = undefined>(
@@ -297,6 +401,34 @@ export function useOmniSendTx<TMode extends WriteContractMode = undefined>(
     abi: omniABI,
     address: omniAddress,
     functionName: 'sendTx',
+    ...config,
+  } as any)
+}
+
+/**
+ * Wraps __{@link useContractWrite}__ with `abi` set to __{@link omniABI}__ and `functionName` set to `"setTxSourceChain"`.
+ */
+export function useOmniSetTxSourceChain<
+  TMode extends WriteContractMode = undefined,
+>(
+  config: TMode extends 'prepared'
+    ? UseContractWriteConfig<
+        PrepareWriteContractResult<
+          typeof omniABI,
+          'setTxSourceChain'
+        >['request']['abi'],
+        'setTxSourceChain',
+        TMode
+      > & { functionName?: 'setTxSourceChain' }
+    : UseContractWriteConfig<typeof omniABI, 'setTxSourceChain', TMode> & {
+        abi?: never
+        functionName?: 'setTxSourceChain'
+      } = {} as any,
+) {
+  return useContractWrite<typeof omniABI, 'setTxSourceChain', TMode>({
+    abi: omniABI,
+    address: omniAddress,
+    functionName: 'setTxSourceChain',
     ...config,
   } as any)
 }
@@ -346,6 +478,40 @@ export function usePrepareOmniWrite<TFunctionName extends string>(
 }
 
 /**
+ * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link omniABI}__ and `functionName` set to `"addSupportedChain"`.
+ */
+export function usePrepareOmniAddSupportedChain(
+  config: Omit<
+    UsePrepareContractWriteConfig<typeof omniABI, 'addSupportedChain'>,
+    'abi' | 'address' | 'functionName'
+  > = {} as any,
+) {
+  return usePrepareContractWrite({
+    abi: omniABI,
+    address: omniAddress,
+    functionName: 'addSupportedChain',
+    ...config,
+  } as UsePrepareContractWriteConfig<typeof omniABI, 'addSupportedChain'>)
+}
+
+/**
+ * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link omniABI}__ and `functionName` set to `"removeSupportedChain"`.
+ */
+export function usePrepareOmniRemoveSupportedChain(
+  config: Omit<
+    UsePrepareContractWriteConfig<typeof omniABI, 'removeSupportedChain'>,
+    'abi' | 'address' | 'functionName'
+  > = {} as any,
+) {
+  return usePrepareContractWrite({
+    abi: omniABI,
+    address: omniAddress,
+    functionName: 'removeSupportedChain',
+    ...config,
+  } as UsePrepareContractWriteConfig<typeof omniABI, 'removeSupportedChain'>)
+}
+
+/**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link omniABI}__ and `functionName` set to `"sendTx"`.
  */
 export function usePrepareOmniSendTx(
@@ -360,6 +526,23 @@ export function usePrepareOmniSendTx(
     functionName: 'sendTx',
     ...config,
   } as UsePrepareContractWriteConfig<typeof omniABI, 'sendTx'>)
+}
+
+/**
+ * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link omniABI}__ and `functionName` set to `"setTxSourceChain"`.
+ */
+export function usePrepareOmniSetTxSourceChain(
+  config: Omit<
+    UsePrepareContractWriteConfig<typeof omniABI, 'setTxSourceChain'>,
+    'abi' | 'address' | 'functionName'
+  > = {} as any,
+) {
+  return usePrepareContractWrite({
+    abi: omniABI,
+    address: omniAddress,
+    functionName: 'setTxSourceChain',
+    ...config,
+  } as UsePrepareContractWriteConfig<typeof omniABI, 'setTxSourceChain'>)
 }
 
 /**
