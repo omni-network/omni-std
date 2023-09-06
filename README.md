@@ -7,14 +7,13 @@ Simple examples of smart contract systems built with this library can be found a
 ## Directory Overview
 
 - `contracts/`: Omni solidity library implementation
-- `src/`: typescript utilities for interacting with Omni contracts
+- `src/`: typescript & react utilities for interacting with Omni contracts
 
 ## How to Use for your own contracts
 
 You'll need to import these contracts to your own repo to use them. You can use any of the following methods:
 - With yarn:
-  - `yarn add https://github.com/omni-network/omni-std`
-  - or, for later versions of yarn, `yarn add @omni/contracts@https://github.com/omni-network/omni-std`
+  - `yarn add @omni-network/contracts`
   - Import with `@omni/contracts/{...}`
 - With forge:
     - `forge install github.com/omni-network/omni-std`
